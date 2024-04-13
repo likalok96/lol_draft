@@ -1,0 +1,88 @@
+.container {
+    height: calc(100vh - 98px -64px);
+}
+
+.b1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5px;
+    margin-bottom: 5px;
+}
+
+.b2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+    margin-bottom: 5px;
+}
+
+.p1 {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 5px;
+    margin-bottom: 10px;
+}
+
+.p2 {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 5px;
+    margin-bottom: 10px;
+}
+
+
+
+
+.pick button{
+    background: transparent;
+    padding: 0rem;
+    border: 5px solid #151515;
+    margin-left: 150px;
+    margin-right: 150px;
+    transition: all 400ms ease;
+}
+
+.pick button:disabled {
+    background-color: white;
+    color: white;
+
+}
+
+.ban button {
+    background: transparent;
+    padding: 0rem ;
+    border: 5px solid #151515;
+    transition: all 400ms ease;
+}
+
+.b2 button {
+    background: transparent;
+    padding: 0rem ;
+    border: 5px solid #151515;
+    margin-left: 37px;
+    margin-right: 37px;
+    transition: all 400ms ease;
+}
+
+.ban img:hover {
+    border: 3px solid yellow;
+    
+}
+
+.pick img:hover {
+    border: 3px solid yellow;
+}
+
+.pick img:disabled {
+    background-color: white;
+    color: white;
+}
+
+
+img.bp__focus  {
+    border: 3px solid yellow;
+}
+
+.conatiner img {
+    height: calc(100vh/7);
+}

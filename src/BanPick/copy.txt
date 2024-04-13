@@ -1,0 +1,114 @@
+.container {
+    height: calc(100vh - 98px -64px);
+}
+
+.b1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5px;
+    margin-bottom: 5px;
+}
+
+.b2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+    margin-bottom: 5px;
+}
+
+.p1 {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 5px;
+    margin-bottom: 10px;
+}
+
+.p2 {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 5px;
+    margin-bottom: 10px;
+}
+
+.ban_container{
+    display: flex;
+    flex-direction: row;
+}
+
+
+.pick button{
+    background: transparent;
+    padding: 0rem;
+    border: 5px solid #151515;
+    margin-left: 150px;
+    margin-right: 150px;
+    transition: all 400ms ease;
+}
+
+.pick button:disabled {
+    background-color: white;
+    color: white;
+
+}
+
+.ban button {
+    background: transparent;
+    padding: 0rem ;
+    border: 5px solid #151515;
+    transition: all 400ms ease;
+}
+
+.b2 button {
+    background: transparent;
+    padding: 0rem ;
+    border: 5px solid #151515;
+    margin-left: 37px;
+    margin-right: 37px;
+    transition: all 400ms ease;
+}
+
+.ban img:hover {
+    border: 3px solid yellow;
+    
+}
+
+.pick img:hover {
+    border: 3px solid yellow;
+}
+
+.pick img:disabled {
+    background-color: white;
+    color: white;
+}
+
+
+img.bp__focus  {
+    border: 3px solid yellow;
+}
+
+.conatiner img {
+    height: calc(100vh/7);
+}
+
+
+      <video src="https://assets.contentstack.io/v3/assets/blt2ac872571a60ee02/blt7a72b1686eb3219a/618d75137ae6ce6fab413b1f/background-video-d-02.mp4" autoplay="" loop="" playsinline="" style="object-fit: cover; object-position: center center; height: 100%; width: 100%; transform-origin: center center;"></video>
+background-image: linear-gradient(rgb(1, 10, 19), rgba(1, 10, 19, 0) 40%, rgba(1, 10, 19, 0) 60%, rgb(1, 10, 19));
+
+              <video src="https://assets.contentstack.io/v3/assets/blt2ac872571a60ee02/blt7a72b1686eb3219a/618d75137ae6ce6fab413b1f/background-video-d-02.mp4" autoplay="" loop="" playsinline="" controls=''style={{objectFit: 'cover', offsetPosition: 'center center', height: '100%', width: '100%', transformOrigin: 'center center', position:'absolute',zIndex:0}}></video>
+    background: linear-gradient(90deg, rgba(158, 133, 46, 0) 0%, rgba(230, 202, 106, 0.3) 50%, rgba(135, 118, 58, 0.19) 100%);
+
+
+        background: linear-gradient(270deg,#FABD0A 0%,#FABD0A 5%,rgba(0,0,0,0) 5%,rgba(0,0,0,0) 10%  , rgba(135, 118, 58, 0.19) 10%, rgba(230, 202, 106, 0.3) 50%, rgba(158, 133, 46, 0) 100%);
+
+
+            <div className={pos==s?'box_container ' : 'box_container'} style={{backgroundImage:`url(https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-splashes/${champMap[bp[s]]}/${champMap[bp[s]]}000.jpg)`,backgroundPosition:'top',backgroundSize:'cover'}}>
+
+            <div className={pos==s?'box_container ' : 'box_container'} 
+            style={{backgroundImage:`url(https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-tiles/${champMap[bp[s]]}/${champMap[bp[s]]}000.jpg)`,
+            backgroundPosition:' 50% 20%',backgroundSize:'cover',backgroundRepeat:'no-repeat'}}>
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: min-content;
+    place-content: center;
+    gap: 20%;

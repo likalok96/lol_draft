@@ -1,0 +1,161 @@
+.champ__wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: calc(100vh - 98px - 64px);
+}
+
+.result {
+    max-height: 100%;
+    width: 100%;
+    overflow: hidden;
+    z-index: 1;
+    height: 100%;
+    max-width: 750px;
+
+
+}
+
+.champ__list {
+
+    display: grid;
+    
+    grid-template-columns: repeat(auto-fill,minmax(100px,1fr));
+
+    gap: 20px 10px;
+    max-height: calc(100% - 80px);
+    height: max-content;
+    overflow-y: scroll;
+    overflow-x: visible;
+    padding-left: 40px ;
+    padding-bottom: 20px;
+    scrollbar-gutter: stable;
+}
+
+.champ__list::-webkit-scrollbar{
+    background-color: #151515;
+}
+
+.champ__list::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+    background-color: #737272;
+    border: 1px solid #000;
+  }
+
+.champ_btn{
+    place-items: center;
+    text-align: center;
+    height: 74px;
+    width: 74px;
+}
+
+.champ_btn button{
+    width: 100%;
+    height: 100%;
+}
+
+.champ_btn h3{
+    font-size: 16px;
+    color: gray;
+    font-family: testfont;
+}
+
+.champ__list button {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    border: 2px solid transparent;
+    margin: 0px ;
+    padding: 1px;
+
+    background-color: transparent;
+    transition: all 0ms ease;
+    width: 100%;
+    height: 100%;
+    
+}
+
+.champ__list .selected{
+    border: 2px solid #fae7b5;
+    --s:15px;
+
+    -webkit-mask:conic-gradient(at var(--s) var(--s),#0000 75%,#000 0) 0 0/calc(100% - var(--s)) calc(100% - var(--s)),linear-gradient(#000 0 0) content-box;
+}
+
+.champ__list .selected img{
+    border: 1px solid gray;
+}
+
+.champ__list button:hover {
+    background-color: #303030;
+    border: 2px solid #fae7b5;
+    --s:15px;
+
+    -webkit-mask:conic-gradient(at var(--s) var(--s),#0000 75%,#000 0) 0 0/calc(100% - var(--s)) calc(100% - var(--s)),linear-gradient(#000 0 0) content-box;
+
+}
+
+img {
+    border-radius: 0rem ;
+    border: 1px solid gray;
+    max-width: 100px;
+    background-color: transparent;
+    width: 100%;
+
+}
+
+
+
+img:hover {
+    border: 1px solid #fae7b5    ;
+}
+
+button:disabled {
+    filter: grayscale(1);
+}
+
+.search__wrapper{
+    background: transparent;
+    border: 1px solid gray;
+    display: flex;
+    width: 70%;
+    align-items: center;
+    margin-bottom: 15px;
+    z-index: 1;
+
+}
+
+input {
+    width: 100%;
+    height: 100%;
+    font-size: 1rem;
+    background: transparent;
+    padding: 14px;
+    color: #fff;
+}
+
+.champ_background{
+    position: absolute;
+    z-index: 0;
+    height: inherit;
+    overflow: clip;
+
+}
+
+@keyframes rotate {
+    0%{
+        transform: rotate(0);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.champ_background svg{
+    width: 100%;
+    height: 100%;
+    animation: rotate 4s linear infinite;
+
+}
