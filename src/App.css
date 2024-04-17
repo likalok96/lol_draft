@@ -1,0 +1,27 @@
+.bp__page
+{
+   display: grid;
+   grid-template-columns: 24vw auto 24vw;
+   height: calc(95vh - 98px);
+
+   padding: 0 0px;
+@media screen and (max-width: 1200px) {
+   grid-template-columns: 1fr 1fr ;
+   grid-template-rows: 1fr 1fr;
+   grid-template-areas: "blue red" "champ champ";
+   
+}
+}
+@media screen and (max-width: 1200px) {
+   .blue{
+      grid-area: blue;
+   }
+
+   .bp__page .red{
+      grid-area: red;
+   }
+  
+   .bp__page .champ{
+      grid-area: champ;
+   }
+}

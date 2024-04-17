@@ -1,16 +1,13 @@
-import React, { useEffect, useState, useRef, useCallback } from 'react'
+import React, { useEffect, useState } from 'react'
 import BanPick from '../src/BanPick/BanPick'
 import ChampSelect from '../src/ChampSelect/ChampSelect'
-import {FiRefreshCw} from 'react-icons/fi'
-import { Link } from "react-router-dom";
-import img from './assets/header.svg'
-import video from './assets/background-video-d-02.mp4'
-import progress from './assets/progress.svg'
 import Header from './Header/Header';
-
+import './App.css'
+import UseChamp from './hook/UseChamp';
 
 const App = () => {
 
+  const {oneChamp, champMap} = UseChamp();
 
   const [bp, setBp] = useState([...Array(20)].fill(''))
   const [pos, setPos] = useState(-1)
@@ -29,32 +26,17 @@ const App = () => {
   },[bp,pos,champ]
   )
 
-/* 
-  function resetClick(){
-    setBp([...Array(20)].fill(''))
-    setChamp('')
-    setPos('')
-  }
- */
-
-
   return (
     <>  
         <Header init={99} time={99} pos={pos} myTurn={myTurn}/>
 
         <div className='bp__page'>
 
-          <div className='blue'>
-            <BanPick setPos={setPos} pos={pos} bp={bp} color='blue' setBp={setBp}/>
-          </div>
+            <BanPick setPos={setPos} pos={pos} bp={bp} color='blue' setBp={setBp} champMap={champMap}/>
 
-          <div className='champ'>
-            <ChampSelect setChamp={setChamp} champ={champ} pos={pos} bp={bp} />
-          </div>
+            <ChampSelect setChamp={setChamp} champ={champ} pos={pos} bp={bp} oneChamp={oneChamp} />
 
-          <div className='red'>
-            <BanPick setPos={setPos} pos={pos} bp={bp} color='red' setBp={setBp}/>
-          </div>
+            <BanPick setPos={setPos} pos={pos} bp={bp} color='red' setBp={setBp} champMap={champMap}/>
           
         </div>
     </>

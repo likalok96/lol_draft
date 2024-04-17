@@ -1,0 +1,28 @@
+.ban {
+    background: transparent;
+    padding: 1px ;
+    border: 2px solid transparent;
+    aspect-ratio: 1 / 1;
+    height: 50px;
+
+}
+
+.ban:hover {
+    border: 2px solid #fae7b5;
+    --s:15px;
+    -webkit-mask:conic-gradient(at var(--s) var(--s),#0000 75%,#000 0) 0 0/calc(100% - var(--s)) calc(100% - var(--s)),linear-gradient(#000 0 0) content-box;
+}
+
+.selected{
+    border: 2px solid #fae7b5;
+    --s:15px;
+    -webkit-mask:conic-gradient(at var(--s) var(--s),#0000 75%,#000 0) 0 0/calc(100% - var(--s)) calc(100% - var(--s)),linear-gradient(#000 0 0) content-box;
+}
+
+.selected img{
+    border: 1px solid #fae7b5;
+}
+
+.ban img:hover {
+    border: 1px solid #fae7b5;
+}

@@ -1,5 +1,5 @@
 import React from 'react'
-import { Routes, Route, Router, BrowserRouter } from 'react-router-dom';
+import { Routes, Route, BrowserRouter } from 'react-router-dom';
 import App from './App';
 import Menu from './Menu/Menu';
 import UsePeer from './hook/UsePeer';

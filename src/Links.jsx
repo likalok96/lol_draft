@@ -22,9 +22,6 @@ const Links = () => {
   const blueLink = `${window.origin}/Blue/${randomId}`
   const hostLink = `${window.origin}/Host/${randomId}`
 
-
-
-
     function generate(length = 10) {
       return (Math.random() + 1).toString(36).substring(2, length + 2);
     }
@@ -55,9 +52,6 @@ const Links = () => {
     )}
     ,[])
 
-
-
-
     const onChangeValue = useCallback( (setValue,e)=>setValue(e) )
 
     function FormSubmit (){
@@ -70,21 +64,13 @@ const Links = () => {
       )
     }
 
-
-
-    
   return (
   <div className='link_main_wrapper'>
     
-
-
       <div className='form_wrapper'>
           <form  action=""  onSubmit={
-            (e)=>{
-              e.preventDefault();
-              console.log('submitted'+match +blue+red)
-              FormSubmit()
-              }
+            (e)=>{e.preventDefault();
+                  FormSubmit()}
           }>
             <h1>Setting</h1>
 
@@ -104,12 +90,11 @@ const Links = () => {
           </form>
         </div>
 
-
-
-
         <div className='links_second_wrapper'>
           <div className='links'>
+
             <h1>Links</h1>
+
             <h3>Blue Team</h3>
             <div className='url'>
               <p>{blueLink}</p> 
@@ -119,16 +104,12 @@ const Links = () => {
 
             <h3>Red Team</h3>
             <div className='url'>
-
               <p>{redLink}</p>
               <button onClick={()=>navigator.clipboard.writeText(redLink)}><AiFillCopy /></button>  
               <a target='_blank' href={redLink}><BiLinkExternal /></a>
             </div>
 
           </div>
-
-          <div></div>
-
         </div>
 
    </div>

@@ -1,0 +1,79 @@
+.bp__page
+{
+   display: grid;
+   grid-template-columns: 24vw auto 24vw;
+   height: calc(95vh - 98px);
+
+   padding: 0 0px;
+@media screen and (max-width: 1200px) {
+   grid-template-columns: 1fr 1fr ;
+   grid-template-rows: 1fr 1fr;
+   grid-template-areas: "blue red" "champ champ";
+   
+}
+}
+@media screen and (max-width: 1200px) {
+   .blue{
+      grid-area: blue;
+   }
+
+   .bp__page .red{
+      grid-area: red;
+   }
+  
+   .bp__page .champ{
+      grid-area: champ;
+   }
+}
+
+
+.champ_control{
+   display: flex;
+   flex-direction: column;
+   position: relative;
+}
+
+.champ_control .ready_button{
+
+   display: flex;
+   justify-content: space-evenly;
+   transform: translateY(-0px);
+   position: absolute;
+   bottom: 0;
+   width: 100%;
+   z-index: 2;
+
+}
+
+.champ_control .ready_button button{
+
+   height: 5vh;
+   width: 10vw;
+
+   border-radius: 50px;
+
+   box-shadow: 1px 1px 10px 1px #151515;
+   font-size: 20px;
+
+   margin-top: 20px;
+
+   color: #B2D9DC;
+
+   background: linear-gradient(#1E2327,#1E2327) padding-box,
+   linear-gradient(180deg, #2CA8B7 0%, #2CA8B7 21.5%, #015A82 100%) border-box;
+
+   border: 3px solid transparent;
+
+
+}
+
+.champ_control .ready_button button:hover{
+   box-shadow: 0 0 10px #2CA8B7;;
+   color: #fff;   
+   cursor: pointer;
+}
+
+.champ_control .ready_button button:disabled{
+   color: #151515;
+   border: 0;
+}

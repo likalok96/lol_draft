@@ -112,3 +112,74 @@ background-image: linear-gradient(rgb(1, 10, 19), rgba(1, 10, 19, 0) 40%, rgba(1
     height: min-content;
     place-content: center;
     gap: 20%;
+
+
+      .header_btn {
+ 
+    background:none;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+    margin-top: 15px;
+ 
+ 
+ }
+
+ 
+
+.curve {
+    position: relative;
+    height: 100px;
+    width: 100%;
+    bottom: 0;
+    overflow: hidden;
+}
+
+section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 400px;
+    padding-top: 100px;
+    background: #3c31dd;
+}
+
+.topBar{
+    height: 200px;
+    width: 200px;
+}
+.conatiner img {
+    height: calc(100vh/7);
+}
+
+.pick img:disabled {
+    background-color: white;
+    color: white;
+}
+.ban img {
+    width: calc(100%);
+    height: calc(100%);
+}
+
+.pick button:disabled {
+    background-color: white;
+    color: white;
+}
+
+.pick button:hover::after{
+   border: 0px solid gray;
+
+}
+
+.result {
+    height: 100%;
+    width: 100%;
+    max-width: 750px;
+    overflow: hidden;
+    z-index: 1;
+}
+.champ_btn button{
+    width: 100%;
+    height: 100%;
+}

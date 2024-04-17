@@ -1,0 +1,100 @@
+.header {
+    display: grid;
+    grid-template-columns: minmax(0,1fr) 600px 55px 600px minmax(0,1fr);
+    grid-template-rows: 100px;
+    place-content: center;
+    place-items: center;
+    margin: 0 0 20px 0;
+    padding: 0 30px;
+    min-height: 100px;
+}
+
+.header p{
+    height: 100%;
+    width: 100%;
+    font-size: 40px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header img{
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    translate:0 20px ;
+    border: 0;
+}
+
+.header a{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.header h1{
+    font-size: 40px;
+    font-family: testfont;
+    padding: 0;
+    width: 100%;
+    align-self: flex-end;
+
+}
+
+.team_name{
+    position: absolute;
+    top: 15%;
+}
+
+.instruction{
+    position: absolute;
+    top: 0;
+}
+ 
+.progress_bar{
+    position: absolute;
+    width: calc(100%);
+    height: 100%;
+    bottom: calc(0%);
+    z-index: 1;
+ }
+ 
+.left .progress_bar{
+    right: 0;
+}
+
+.right .progress_bar{
+    left: 0;
+}
+
+.header_inner{
+    width: 100%;
+    height:100%;
+    position: relative;
+    z-index: 0;
+}
+
+.header_inner svg{
+    position: absolute;
+    z-index: 1;
+    transition: all 1s linear;
+}
+
+.left svg{
+    translate: 0 0px;
+    right: 0;
+}
+
+.right svg{
+    transform: rotateY(180deg);
+    left: 0;
+}
+
+.right img{
+    transform: rotateY(180deg);
+}
+
+.left img{
+    transform: rotateY(0deg);
+}
