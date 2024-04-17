@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/lol_draft/static/css/main.c9f45f40.css",
-    "main.js": "/lol_draft/static/js/main.dc6f7c03.js",
+    "main.js": "/lol_draft/static/js/main.0b9fde49.js",
     "static/media/header.svg": "/lol_draft/static/media/header.28a25c8b414ce40182ea0d9eb2ea77c1.svg",
     "static/media/BeaufortforLOL-BoldItalic.otf": "/lol_draft/static/media/BeaufortforLOL-BoldItalic.a84c8c911ad516be6be4.otf",
     "index.html": "/lol_draft/index.html",
     "main.c9f45f40.css.map": "/lol_draft/static/css/main.c9f45f40.css.map",
-    "main.dc6f7c03.js.map": "/lol_draft/static/js/main.dc6f7c03.js.map"
+    "main.0b9fde49.js.map": "/lol_draft/static/js/main.0b9fde49.js.map"
   },
   "entrypoints": [
     "static/css/main.c9f45f40.css",
-    "static/js/main.dc6f7c03.js"
+    "static/js/main.0b9fde49.js"
   ]
 }
